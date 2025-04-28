@@ -1,6 +1,124 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(./fonts/Norse-Bold.otf) format('opentype');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    background-color: gainsboro;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+/************************************** LOGO **************************************/
+
+.logo-bg {
+    width: 40vw;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 80px;
+    width: 40vw;
+    height: 20vh;
+    background-color: black;
+    opacity: 80%;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-logo {
+    width: 150px;
+}
+
+.txt-logo {
+    font-size: 150px;
+    color: whitesmoke;
+    font-family: 'Norse';
+}
+
+.img-author {
+    width: 40vw;    
+    top: 1124px;
+    position: absolute;
+    text-align: center;
+    color: whitesmoke;
+}
+
+/************************************** FIRST INFO **************************************/
+
+.info-section-quote {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 200px 60px 80px 60px;
+}
+
+/************************************** FORM INFO **************************************/
+
+.form-section {
+    width: 100%;
+}
+
+.fieldset-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 10px;
+    padding: 40px 60px;
+    border: none;
+    background-color: white;
+    font-family: sans-serif;
+}
+
+h1 {
+    width: 100%;
+}
+
+.form-item {
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid #E5E7EB;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+/************************************** LOG INFO **************************************/
+
+.log-section {
+    padding: 40px 25px;
+    font-family: sans-serif;
+}
+
+.btn-log {
+    margin-bottom: 10px;
+    padding: 20px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #596D48;
+}
